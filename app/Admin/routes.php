@@ -13,5 +13,11 @@ Route::group([
 ], function (Router $router) {
 
     $router->get('/', 'HomeController@index');
+    $router->resource('brands', 'BrandController');
+    $router->resource('chips', 'ChipController');
+    $router->resource('distros', 'DistributionController');
+    $router->resource('types', 'TypeController');
+    $router->resource('peripherals', 'PeripheralController');
+    $router->resource('solutions', 'SolutionController');
 
 });
